@@ -25,7 +25,8 @@ const SuperQuality = () => {
         <div className="mt-11">
           <Button
             label="View details"
-            className="px-7 text-white bg-coral-red w-40 text-center py-4 rounded-full text-lg"
+            className="
+font-montserrat px-7 text-white bg-coral-red w-44 text-center py-4 rounded-full text-lg"
           />
         </div>
       </div>

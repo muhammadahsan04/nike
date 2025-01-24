@@ -28,7 +28,7 @@ const Hero = () => {
           for your active life.
         </p>
         <Button
-          className="py-4 px-7 border border-coral-red bg-coral-red rounded-full text-white flex justify-center items-center gap-3 text-lg"
+          className="py-4 px-5 border border-coral-red bg-coral-red rounded-full text-white flex justify-center items-center gap-3 text-lg w-48 font-montserrat"
           label="Shop now"
           iconUrl={arrowRight}
           imgAlt="rightArrow"

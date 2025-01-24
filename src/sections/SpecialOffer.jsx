@@ -28,7 +28,7 @@ function SpecialOffer() {
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.
         </p>
-        <div className="mt-11 flex gap-3">
+        <div className="mt-11 flex gap-3 font-montserrat">
           <Button
             label="Shop now"
             iconUrl={arrowRight}
