@@ -70,7 +70,7 @@ const App = () => {
             <section className="padding">
               <PopularProducts />
             </section>
-            <section className="padding">
+            <section className="padding-x">
               <SuperQuality />
             </section>
             <section className="padding-x py-10">

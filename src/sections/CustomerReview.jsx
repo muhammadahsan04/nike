@@ -148,12 +148,12 @@ const CustomerReview = () => {
   };
 
   return (
-    <section className="padding bg-gradient-to-b from-white to-slate-50">
+    <section className="px-4 padding-y sm:padding bg-gradient-to-b from-white to-slate-50">
       <div className="max-container">
 
         {/* Header Section */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-coral-red text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
+          {/* <div className="inline-block bg-coral-red text-white px-6 py-2 rounded-full text-sm font-medium mb-6">
             Customer Reviews
           </div>
 
@@ -164,7 +164,32 @@ const CustomerReview = () => {
           <p className="max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed mb-8">
             Hear genuine stories from our satisfied customers about their
             exceptional experiences with us. Real reviews from real people.
+          </p> */}
+
+          <div className="inline-block bg-coral-red text-white px-3 py-1.5 sm:px-6 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+            Customer Reviews
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-palanquin font-bold mb-4 sm:mb-6">
+            What Our <span className="text-coral-red">Customers</span> Say?
+          </h2>
+
+          <p className="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6 sm:mb-8">
+            Hear genuine stories from our satisfied customers about their
+            exceptional experiences with us. Real reviews from real people.
           </p>
+
+          {/* Responsive Submit and Cancel Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md mx-auto mb-8 sm:mb-12">
+            <button className="bg-coral-red text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-coral-red/90 transition-colors text-sm sm:text-base">
+              Write a Review
+            </button>
+
+            <button className="bg-gray-200 text-gray-700 px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors text-sm sm:text-base">
+              View All Reviews
+            </button>
+          </div>
+
 
           {/* Rating Overview */}
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto mb-12">
@@ -469,8 +494,8 @@ const CustomerReview = () => {
               <button
                 onClick={() => setCurrentPage(0)}
                 className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg font-medium transition-all text-sm sm:text-base ${currentPage === 0
-                    ? 'bg-coral-red text-white shadow-lg'
-                    : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
+                  ? 'bg-coral-red text-white shadow-lg'
+                  : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
                   }`}
               >
                 1
@@ -491,8 +516,8 @@ const CustomerReview = () => {
                     key={i}
                     onClick={() => setCurrentPage(i)}
                     className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg font-medium transition-all text-sm sm:text-base ${currentPage === i
-                        ? 'bg-coral-red text-white shadow-lg'
-                        : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
+                      ? 'bg-coral-red text-white shadow-lg'
+                      : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
                       }`}
                   >
                     {i + 1}
@@ -510,8 +535,8 @@ const CustomerReview = () => {
                 <button
                   onClick={() => setCurrentPage(totalPages - 1)}
                   className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg font-medium transition-all text-sm sm:text-base ${currentPage === totalPages - 1
-                      ? 'bg-coral-red text-white shadow-lg'
-                      : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
+                    ? 'bg-coral-red text-white shadow-lg'
+                    : 'bg-white text-slate-600 hover:bg-coral-red hover:text-white border border-gray-200'
                     }`}
                 >
                   {totalPages}
@@ -573,7 +598,7 @@ const CustomerReview = () => {
         )} */}
 
         {/* Call to Action */}
-        <div className="text-center mt-16 bo">
+        {/* <div className="text-center mt-16 bo">
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Share Your Experience</h3>
             <p className="text-slate-600 mb-6">
@@ -583,7 +608,29 @@ const CustomerReview = () => {
               Write a Review
             </button>
           </div>
+        </div> */}
+
+        {/* Call to Action */}
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg max-w-2xl mx-auto">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Share Your Experience</h3>
+            <p className="text-sm sm:text-base text-slate-600 mb-4 sm:mb-6">
+              Have you purchased from us? We'd love to hear about your experience!
+            </p>
+
+            {/* Responsive Submit and Cancel Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <button className="bg-coral-red text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-coral-red/90 transition-colors text-sm sm:text-base">
+                Write a Review
+              </button>
+
+              <button className="bg-gray-200 text-gray-700 px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors text-sm sm:text-base">
+                Maybe Later
+              </button>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
