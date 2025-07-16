@@ -50,7 +50,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="relative min-h-[500px]">
+        <div className="relative h-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-20 mb-12">
             {currentServices.map((service, index) => (
               <div

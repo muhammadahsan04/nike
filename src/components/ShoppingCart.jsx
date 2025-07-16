@@ -128,7 +128,7 @@ const ShoppingCart = ({ onClose, onProceedToCheckout }) => {
                 ></div>
 
                 {/* Cart Modal */}
-                <div className="fixed top-24 inset-x-0 mx-auto border-4 w-[90%] bg-white shadow-xl rounded-lg z-50 overflow-y-auto ">
+                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 w-[60%] bg-white shadow-xl rounded-lg z-50 overflow-y-auto ">
                     <div className="p-4 border-b flex justify-between items-center">
                         <h3 className="text-lg font-semibold">Shopping Cart</h3>
                         <button
